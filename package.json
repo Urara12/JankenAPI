@@ -1,0 +1,27 @@
+{
+  "name": "JankenAPI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Urara12/JankenAPI.git",
+  "author": "Urara <Urara.Nakauchi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./app.js",
+    "dev": "nodemon ./back/server.js",
+    "build": "webpack --watch --progress --colors",
+    "migrate": "knex migrate:latest --knexfile back/knex.js",
+    "rollback": "knex migrate:rollback --knexfile back/knex.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.21.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "pg": "^8.2.1"
+  },
+  "devDependencies": {
+    "jsdom": "11.10.0",
+    "jsdom-global": "^3.0.2",
+    "webpack": "3.8.1"
+  }
+}
