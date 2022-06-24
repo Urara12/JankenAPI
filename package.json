@@ -20,7 +20,7 @@
     "pg": "^8.2.1"
   },
   "devDependencies": {
-    "jsdom": "11.10.0",
+    "jsdom": "16.5.0",
     "jsdom-global": "^3.0.2",
     "webpack": "3.8.1"
   }
